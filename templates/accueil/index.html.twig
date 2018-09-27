@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{page_title}} - Accueil{% endblock %}
+
+{% block body %}
+	<div class="container" style="text-align:center;border: 1px solid;margin-top: 80px;">
+		<h3">N'ATTENDEZ PLUS</h3>
+		<h3>" NE PENSEZ PAS QUE CECI N'ARRIVE QU'AUX AUTRES "</h3>
+	</div>
+	<section id="banner">
+		<div class="content">
+				<header>
+					<h3>Philip'alarme<br />
+		                Société d'alarme</h3>
+		                <p>Entretien et vente de système de sécurité</p>
+		        </header>
+		    <p>VANHOVE Philippe</br>  27 ans d'expérience à votre service</p>
+		    <ul class="actions">
+		    	<li><a href="/apropos" class="button big">Apprendre plus</a></li>
+			</ul>
+		</div>
+		<span class="image object">
+		        <img src="images/philippe.JPG" class="img-fluid rounded img-thumbnail float-right" {#style="height:250px;width: 250px;"#} alt="" />
+		</span>
+	</section>
+
+	<!-- Section -->
+	<section>
+		<div class="features">
+		        <article>
+		                <span class="icon fa-camera"></span>
+		                <div class="content">
+		                        <h3>Alarme Intrusion</h3>
+		                        <button type="button" class="btn btn-outline-info">Cliquez-ici</button>
+		                </div>
+		        </article>
+		        <article>
+		                <span class="icon fa-video-camera"></span>
+		                <div class="content">
+		                        <h3>Protection Vidéo</h3>
+		                        <button type="button" class="btn btn-outline-info">Cliquez-ici</button>
+		                </div>
+		        </article>
+		        <article>
+		                <span class="icon fa-rocket"></span>
+		                <div class="content">
+		                        <h3>Générateur de fumée</h3>
+		                        <button type="button" class="btn btn-outline-info">Cliquez-ici</button>
+		                </div>
+		        </article>
+		        <article>
+		                <span class="icon fa-signal"></span>
+		                <div class="content">
+		                        <h3>Interphonie</h3>
+		                        <button type="button" class="btn btn-outline-info">Cliquez-ici</button>
+		                </div>
+		        </article>
+		</div>
+	</section>
+{% endblock %}

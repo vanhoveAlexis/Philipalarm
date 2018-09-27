@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{page_title}} - Contrat de Maintenance{% endblock %}
+
+{% block body %}
+	<section style="text-align:center;">
+		<h2 style="color:blue;">DIFFERENTS CONTRATS D’ENTRETIEN</h2>
+	</section>
+        <ul>
+            <li><b>CONFIANCE :</b> Vérification annuelle + Télémaintenance</li>
+            <li><b>CONFORT :</b> Vérification annuelle + Interventions (Déplacement + M.O) + Télémaintenance</li>
+            <li><b>SERENITE :</b> Vérification annuelle + Interventions (Déplacement + M.O) + Matériel + Télémaintenance</li>
+        </ul>
+        <b>La visite annuelle comprend : </b></p>
+        <ul>
+            <li>Un contrôle complet de tous les points de détection, des organes de commande, des appareils de dissuasion et de transmission.</li>
+            <li>Nettoyage des appareils et réglages eventuels</li>
+            <li>Mise à jour de l’ensemble du système</li>
+            <li>Contrôle de l’historique</li>
+            <li>A la demande du client, modification conforme de la programmation</li>
+            <li>Si besoin, réexplications sur le fonctionnement de votre système</li>
+        </ul>
+        <b>La télémaintenance :</b>
+        <ul>
+            <li>Connexion à distance sur votre système</li>
+            <li>Intervention rapide et provisoire dans l’attente d’une remise en état sur place</li>
+            <li>Modifications, cohérentes, à apporter selon les besoins et les demandes du client</li>
+        </ul>
+        <b>Interventions</b>
+        <ul>
+            <li>Dépannage et remise en état du système comprenant le temps chez le client et le déplacement <b>*</b></li>
+        </ul>
+        <b>Materiel</b>
+        <ul>
+            <li>Remplacement du matériel en cas de panne ou de défaillance électronique*, avec reprogrammation et reconfiguration. </li>            
+        </ul>
+        <b>* La prise en charge du matériel par le contrat souscrit, est effective hormis, la détérioration, la casse et toute utilisation anormale.</b>
+{% endblock %}
+    

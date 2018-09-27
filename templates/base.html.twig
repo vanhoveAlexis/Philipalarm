@@ -1,0 +1,125 @@
+    <!DOCTYPE HTML>
+<!--
+Editorial by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    {% set page_title = 'Philip\'alarm' %}
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="/images/logo.png" />
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <img src="images/favicon.png" alt="" style="height:250px;width:100px;">
+                </header>
+
+                <!-- Banner -->
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+        <!-- Sidebar -->
+        {% block sidebar %}
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="/accueil">Accueil</a></li>
+                        <li><a href="/apropos">A Propos</a></li>
+                        <li>
+                            <span class="opener">Nos services</span>
+                            <ul>
+                                <li><a href="/contratmaintenance">Contrat de maintenance</a></li>
+                                <li><a href="/pileetbatteries">Remplacement Piles et Batteries</a></li>
+                                <li><a href="#">Depannage Alarme Intrusion</a></li>
+                                <li><a href="#">Depannage VideoSurveillance</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Nos produits</span>
+                            <ul>
+                                <li><a href="#">Alarme Intrusion</a></li>
+                                <li><a href="#">Video Surveillance</a></li>
+                                <li><a href="#">Interphonie</a></li>
+                                <li><a href="#">Generateur de fumée</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="elements.html">Partenaires</a></li>
+                        <li>
+                            <span class="opener">Outils</span>
+                            <ul>
+                                <li><a href="#">Differents formulaires  </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Galerie</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mention legales</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Mon entreprise</h2>
+                    </header>
+                    <p>Description</p>
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="#">philipalarme@gmail.com</a></li>
+                        <li class="fa-phone">(+33) 626 049444</li>
+                        <li class="fa-home">260 Impasse des grandes charrières<br />
+                        74270 Musièges, FRANCE </li>
+                        <!--The div element for the map -->
+                        <div id="map"></div>
+                        <!-- Replace the value of the key parameter with your own API key. -->
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0k4LAmRd1S5URpq1O_rBB9R-_m3bsDCQ&callback=initMap">
+                    </script>                                                            
+                </ul>
+            </section>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter fa-10x" target="_blank"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/philipalarme/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            </ul>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">&copy; Copyright Philip'alarm</p>
+            </footer>
+
+        </div>
+    </div>
+    {% endblock %}
+</div>
+
+<!-- Scripts -->
+{% block javascripts %}
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="phlipealarme.js"></script>
+{% endblock %}
+
+</body>
+</html>
